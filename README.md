@@ -75,6 +75,14 @@ with its ID, state, source path and exact matching values. Source filenames and
 timestamps alone do not classify a photo as a duplicate.
 Photos sharing a destination folder with different filenames do not clash.
 
+| New · Pending | New · Ready |
+| --- | --- |
+| ![New Pending queue](docs/screenshots/new-pending.png) | ![New Ready queue](docs/screenshots/new-ready.png) |
+| Skipped | Archived |
+| ![Skipped queue](docs/screenshots/skipped.png) | ![Archived queue](docs/screenshots/archived.png) |
+| Errors | Duplicates |
+| ![Errors queue](docs/screenshots/errors.png) | ![Duplicates queue](docs/screenshots/duplicates.png) |
+
 Every photo tab shows three trees above its photo table: source folders, original
 NAS destination folders (relative to the configured original root), and Year → Month.
 Counts include the current tab's photos and videos in each branch and its
@@ -87,6 +95,8 @@ photos** at the top of a tree to clear only that filter, keeping the other two i
 effect. Each photo tab remembers its own tree selections. Borders show active
 filters. Changing a tree filter clears bulk photo selection. Filtering uses cached
 catalog rows without scanning sources or NAS. Configuration keeps its four rule panes.
+
+![Configuration panes](docs/screenshots/configuration.png)
 
 Photo details appear in a scrollable pane to the right of the photo table, with
 labelled Source, Original, Timestamp, Final and Rules fields. View, rule and
@@ -111,6 +121,14 @@ within a rule are ANDed. Skip fields use True/False/Null radio buttons; Null mea
 inherit. Enabled uses True/False radio buttons.
 Invalid rule drafts remain open with an error message. Edit rule rows through the
 Configuration table and Edit button. Disable rules rather than deleting provenance.
+
+| Add source folder | Add camera |
+| --- | --- |
+| ![Add source folder form](docs/screenshots/add-folder.png) | ![Add camera form](docs/screenshots/add-camera.png) |
+
+**Add EXIF rule**
+
+![Add EXIF rule form](docs/screenshots/add-exif-rule.png)
 
 Rule changes preserve saved results and show **Out of date**. Sync needs explicit
 confirmation to use stale ready results; noninteractive CLI calls must pass
